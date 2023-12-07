@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/client/css/styleInbox.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>FullStack Desing</title>
+</head>
+
+<body>
+    <div class="header-content">
+        <header>
+            <h3 id="title">FULLSTACK DESIGN</h3>
+            <nav>
+                <ul>
+                    <li><a href="/client/index.html">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="/client/html/contact.html">CONTACTOS</a></li>
+                    <li><a href="/client/html/inbox.html">&#128237</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+    </div>
+<main class="list">
+    <div id="listMessage">
+        <h3>Mensajes</h3>
+    </div>
+    <div id="listSubscript">
+        <h3>Subscripciones</h3>
+    </div>
+</main>
+    <script src="/client/js/index.js"></script>
+    <script src="/client/js/msgDelServer.js"></script>
+    <script src="/client/js/msgGetServer.js"></script>
+    <script src="/client/js/msgReadServer.js"></script>
+    <script src="/client/js/subsGetServer.js"></script>
+</body>
+
+</html>

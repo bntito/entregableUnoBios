@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/css/styleContact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>FullStack Desing Contact</title>
+</head>
+
+<body>
+    <div class="header-content">
+        <header>
+            <h3 id="title">FULLSTACK DESIGN</h3>
+            <nav>
+                <ul>
+                    <li><a href="/client/index.html">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="/client/html/contact.html">CONTACTOS</a></li>
+                    <li><a href="/client/html/inbox.html">&#128237</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+    </div>
+
+    <main class="mainContact">
+        <div class="message">
+            <form id="messageForm">
+                <h2>CONTACT US</h2>
+                <label for="name">
+                    <input type="text" id="name" name="nombre" placeholder="Nombre" required/>
+                </label>
+                <label for="tel">
+                    <input type="tel" id="tel" name="telefono" placeholder="Celular"/>
+                </label>
+                <label for="email">
+                    <input type="email" id="email" name="correo" placeholder="Email" required/>
+                </label>
+                <label for="mensaje">
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"/>
+                </label>
+                <button type="submit" class="btnEnv">ENVÍAR</button>
+            </form>
+        </div>
+
+        <aside class="subscript">
+            <form id="subscriptForm">
+                <h2>ÚNETE A NOSOTROS</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <label for="emailSub">
+                    <input type="email" id="emailSub" name="emailSubsc" placeholder="Ingresá tu email" required/>
+                </label>
+                <button type="submit" class="btnSub">SUBSCRIBETE</button>
+            </form>
+        </aside>
+    </main>
+
+
+    <footer>
+        <section class="footerA">
+            <div class="footer1">
+                <h4><b>FULLSTACK DESIGN</b></h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+
+            <div class="footer2">
+                <h4>Empresa</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+
+            <div class="footer3">
+                <div class="contactos"></div>
+                <h4>Contáctanos</h4>
+                <label class="dato">
+                    <img src="../../server/src/public/images/gps.png" alt="gps">
+                    <p>Ubicación</p>
+                </label>
+                <label class="dato">
+                    <img src="../../server/src/public/images/fono.png" alt="teléfono">
+                    <p>Call +598 00 000 000</p>
+                </label>
+                <label class="dato">
+                    <img src="../../server/src/public/images/direccion.png" alt="correo">
+                    <p>demo@gmail.com</p>
+                </label>
+            </div>
+        
+            <div class="footer4">
+                <div class="redes">
+                <h4>Siguenos por</h4>
+                <div class="redesSociales">
+                    <img class="facebook" src="../../server/src/public/images/fb.svg" alt="facebook">
+                    <img class="twitter" src="../../server/src/public/images/x.svg" alt="twitter">
+                    <img class="linkedin" src="../../server/src/public/images/in.svg" alt="linkedin">
+                    <img class="instagram" src="../../server/src/public/images/ig.svg" alt="instagram">
+                </div>
+                </div>
+            </div>
+        </section>
+                
+        <section class="footer5">
+                <p><small>&copy; 2023 Todos los Derechos Reservados</small></p>
+        </section>
+    </footer>
+    <script src="/client/js/index.js"></script>
+    <script src="/client/js/msgAddServer.js"></script>
+    <script src="/client/js/subsAddServer.js"></script>
+
+</body>
+</html>

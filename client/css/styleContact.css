@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Ar;
+    list-style: none;
+}
+
+body {
+    padding: 10px 40px 20px 40px;
+    width: 100%;
+    height: 100%;
+    min-width: 450px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(59, 59, 99);
+    padding: 0.5rem;
+}
+
+header #title {
+    color: white;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+header nav {
+    width: 75%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+
+header nav ul a {
+    border: 2px solid rgb(80, 80, 102);
+    background-color: rgba(86, 67, 156, 0.767);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+
+header nav ul a:hover {
+    color: rgb(13, 13, 34);
+    background-color: rgba(171, 109, 212, 0.37);
+    border-radius: 25px;
+    transition: all 0.4s;
+    box-shadow: 2px 2px black;
+}
+
+header .nav-icon {
+    color: white;
+    width: 5%;
+    font-size: 1.5rem;
+    display: none;
+}
+
+header .nav-icon:hover {
+    cursor: pointer;
+}
+
+.footerA {
+    background-color: rgb(43, 43, 61);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem 8rem;
+    
+}
+
+.footer1, 
+.footer2,
+.footer3, 
+.footer4 {
+    width: 25%;
+    margin: 1rem;
+}
+
+.footer1 h4 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.footer2 h4, 
+.footer3 h4,
+.footer4 h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+footer .dato {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+footer .dato img {
+    margin-right: 1rem;
+}
+
+.redesSociales img{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .7rem;
+    border: .8px solid white;
+}
+
+.redesSociales img:hover {
+    cursor: pointer;
+    transform: scale3d(1.1, 1.1, 2);
+}
+
+.footer5 {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContact {
+    margin: 5rem auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    width: 100%;
+    max-width: 35%; 
+    background-color: rgb(59, 59, 99);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#messageForm h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.1rem;
+}
+
+#messageForm input {
+    width: 100%;
+    padding: .8rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
+#messageForm #mensaje {
+    padding: 2rem .8rem;
+}
+
+#messageForm button {
+    padding: .8rem 3rem;
+    background-color: rgb(216, 91, 53);
+    color: white;
+    font-family: Poppins;
+}
+
+#messageForm button:hover {
+    cursor: pointer;
+    transform: scale3d(1.1, 1.1, 2);
+}
+
+#subscriptForm button {
+    margin: 0 auto 0 0;
+    padding: .8rem 3rem;
+    background-color: rgb(59, 59, 99);
+    color: white;
+    font-family: Poppins;
+}
+
+#subscriptForm button:hover {
+    cursor: pointer;
+    transform: scale3d(1.1, 1.1, 2);
+}
+
+.subscript {
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+
+.subscript p {
+    color: gray;
+}
+
+.subscript input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: rgba(128, 128, 128, 0.349);
+}
+
+@media (max-width: 670px) {
+    header nav ul {
+        display: none;
+    }
+    header .nav-icon {
+        display: block;
+    }
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        z-index: 2;
+        font-size: .8rem;
+    }
+    header nav ul li {
+        margin: .5rem 0;
+    }
+    .footer4 {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 85% ;
+    }
+}
+
+@media (max-width: 915px) {
+    header #title {
+        margin-left: 5%;
+    }
+    header nav ul {
+        margin-left: 1rem;
+    }
+    header nav ul {
+        font-size: 12px;
+    }
+    .footerA {
+        flex-direction: column;
+    }
+    .footer1, 
+    .footer2,
+    .footer3, 
+    .footer4 {
+    width: 100%;
+    margin: 0;
+    }
+    .mainContact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 915px) {
+    .mainContact {
+        flex-direction: column;
+    }
+    .message,
+    .subscript {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1260px) {
+    .footerA {
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+    }
+    .footer4 {
+        margin: 0 auto;
+    }
+}

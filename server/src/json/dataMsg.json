@@ -1,0 +1,17 @@
+[
+  {
+    "idM": 1,
+    "nombre": "Bruno ",
+    "telefono": 90010011100,
+    "email": "bruno.nicolas.tito@gmail.com",
+    "mensaje": "Hola quede asombrado con su UI y su UX no me imagino lo que es su server pero quiciera apreder de ustedes",
+    "read": true
+  },
+  {
+    "idM": 2,
+    "nombre": "Bruno Nicolás ",
+    "telefono": 5433214432,
+    "email": "oxo.anti.hackers@gmail.com",
+    "mensaje": "Hola, pasaba a saludar"
+  }
+]
